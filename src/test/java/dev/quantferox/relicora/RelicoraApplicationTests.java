@@ -1,10 +1,10 @@
-package dev.quantferox.voltex;
+package dev.quantferox.relicora;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VoltexApplicationTests {
+class RelicoraApplicationTests {
 
 	@Test
 	void contextLoads() {

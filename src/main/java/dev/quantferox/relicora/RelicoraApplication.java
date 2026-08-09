@@ -1,11 +1,11 @@
-package dev.quantferox.voltex;
+package dev.quantferox.relicora;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VoltexApplication {
+public class RelicoraApplication {
   public static void main(String[] args) {
-    SpringApplication.run(VoltexApplication.class, args);
+    SpringApplication.run(RelicoraApplication.class, args);
   }
 }
