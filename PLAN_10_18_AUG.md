@@ -1,6 +1,37 @@
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
+## 🗓 ДЕНЬ 2 — 11 августа (понедельник)
+### Тема: Java Core — JVM Internals + Collections + Generics
+
+**Утро (блок 1)**
+- [ ] **JVM Internals**: ClassLoader hierarchy, delegation model, загрузка классов
+- [ ] **Heap / Stack / Metaspace** — что где хранится, примеры OOM
+- [ ] **GC** — G1 (regions, mixed GC, evacuation failure), ZGC, Shenandoah
+- [ ] **Garbage Collectors** — serial, parallel, CMS (deprecated), G1, ZGC, Shenandoah — сравнение и выбор
+- [ ] **JIT** — C1/C2 compiler, tiered compilation, deoptimization
+- [ ] **Escape Analysis** — stack allocation, scalar replacement
+- [ ] **Concurrency в JVM** — как JVM управляет потоками, monitor object, thread states на уровне JVM
+- [ ] **TLAB**, **Compressed Oops**, **Safepoints**
+
+**День (блок 2)**
+- [ ] **Bytecode** — javap, как читать, invokedynamic
+- [ ] **Reflection** — getDeclaredMethods, setAccessible, performance cost
+- [ ] **Annotation Processing** — APT, как работает во время компиляции
+- [ ] **MethodHandle** — vs Reflection, LambdaMetafactory
+- [ ] **Unsafe** — что умеет, где Spring/Hibernate используют
+
+**Вечер (блок 3)**
+- [ ] `HashMap` internals — hash(), treeify, resize, load factor, capacity
+- [ ] `equals` / `hashCode` contract — нарушения, последствия
+- [ ] `Generics` — type erasure, wildcards (`? extends`, `? super`), PECS
+- [ ] `Stream API` — lazy evaluation, spliterator, parallel streams
+- [ ] `Optional` — правильное использование, антипаттерны
+- [ ] `String Pool`, `String.intern()`, `StringBuilder` vs `StringBuffer`
+- [ ] **Java 8+** — lambdas, method references, records (Java 16+), sealed classes, pattern matching
+
+---
+
 ## 🗓 ДЕНЬ 3 — 12 августа (вторник)
 ### Тема: Spring Core + Boot Internals (уровни 2–3)
 
