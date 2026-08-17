@@ -1,6 +1,20 @@
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
+- [ ] volatile — visibility, happens-before, не атомарность
+- [ ] Java Memory Model — happens-before rules, memory barriers
+- [ ] Atomic* — CAS, compare-and-swap, ABA problem
+- [ ] Lock, ReentrantLock, ReadWriteLock — vs synchronized
+- [ ] wait() / notify() / notifyAll() — условие, spurious wakeup
+- [ ] Race Condition — примеры, как воспроизвести и исправить
+- [ ] Visibility — что видит один поток из другого без синхронизации
+- [ ] Exceptions — checked vs unchecked, иерархия, try-with-resources, multicatch, custom exceptions, ExceptionInInitializerError
+- [ ] ExecutorService, ThreadPool, Executor — internals
+- [ ] CompletableFuture — chain, thenApply, thenCompose, exceptionally, allOf
+- [ ] ForkJoinPool — work stealing, рекурсивные задачи
+- [ ] ConcurrentHashMap, BlockingQueue — внутренняя реализация
+- [ ] CountDownLatch, CyclicBarrier, Semaphore — разница и применение
+
 ## 🗓 ДЕНЬ 2 — 11 августа (понедельник)
 ### Тема: Java Core — JVM Internals + Collections + Generics
 
@@ -338,78 +352,3 @@
 - [ ] DispatcherServlet pipeline — все шаги
 - [ ] Подготовить production incident story (реальный или придуманный детально)
 - [ ] **Практические задачи** — реализовать реентерабельный distributed lock; спроектировать систему с eventual consistency; объяснить по EXPLAIN ANALYZE медленный запрос
-
----
-
----
-
-## 📊 Сводная таблица по дням
-
-| День | Дата | Основные темы | Источники |
-|------|------|---------------|-----------|
-| 1 | 10.08 Вс | Multithreading, JMM, ExecutorService, CompletableFuture | куска.txt уровни 1–3 |
-| 2 | 11.08 Пн | JVM Internals, GC, Reflection, Collections, Generics, Stream, Java 8+ | куска.txt уровень 11 + Java Core |
-| 3 | 12.08 Вт | Spring Core + Boot Internals | куска.txt уровни 2–3 |
-| 4 | 13.08 Ср | Spring MVC + Hibernate/JPA + Maven/POM | куска.txt уровни 4–5 + EXTENDED §1 |
-| 5 | 14.08 Чт | Spring Security + PostgreSQL + REST Design | куска.txt уровни 6–7 + EXTENDED §5,§10 |
-| 6 | 15.08 Пт | Kafka, RabbitMQ, Distributed Systems | куска.txt уровни 8–9 |
-| 7 | 16.08 Сб | Performance, JVM Tuning, Architecture, Virtual Threads | куска.txt уровни 10–12 + EXTENDED §7,§8 |
-| 8 | 17.08 Вс | Infrastructure (Systemd, TLS, Certificates), DevOps, OOP, Patterns, Testing, Production, Redis, Bulkhead, Strangler Fig | куска.txt уровни 13–17 + EXTENDED §3,§4,§9,§11,§12 |
-| 9 | 18.08 Пн | Spring Source Code, Custom Implementations, Mock Interview | куска.txt уровень 18 + EXTENDED §13 |
-
----
-
-## ⚡ Правила работы с планом
-
-1. **Не листай — понимай.** Если тема знакома на 70% — проверь глубину: можешь объяснить без гугла?
-2. **Код > слова.** По каждой теме написать хотя бы один пример кода из памяти.
-3. **Три блока в день.** Утро / День / Вечер — каждый ~1.5–2 часа. Итого ~5 часов в день.
-4. **Checkbox — только после понимания**, не после прочтения.
-5. **День 9 (18.08)** — финальный: только повторение и mock interview. Никаких новых тем.
-
----
-
-## 📚 Ссылки из плана (под рукой)
-
-### Документация
-- [High Scalability](http://highscalability.com/) — реальные архитектуры production систем
-- [mvnrepository.com](https://mvnrepository.com/) — зависимости Maven
-- [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-- [Spring Boot Maven Plugin](https://docs.spring.io/spring-boot/4.1.0/maven-plugin)
-- [Create OCI image](https://docs.spring.io/spring-boot/4.1.0/maven-plugin/build-image.html)
-- [Spring Web reference](https://docs.spring.io/spring-boot/4.1.0/reference/web/servlet.html)
-- [Spring Boot DevTools](https://docs.spring.io/spring-boot/4.1.0/reference/using/devtools.html)
-- [Spring Framework Source](https://github.com/spring-projects/spring-framework)
-- [Baeldung](https://www.baeldung.com/) — Spring Boot практика
-- [Vlad Mihalcea](https://vladmihalcea.com/) — JPA/Hibernate
-- [Thorben Janssen](https://thorben-janssen.com/) — Hibernate tips
-- [ByteByteGo](https://bytebytego.com/) — System Design
-- [Martin Fowler](https://martinfowler.com/) — Architecture Patterns
-- [PostgreSQL docs — indexes](https://www.postgresql.org/docs/current/indexes.html)
-
-### Spring Guides
-- [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-- [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-- [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-
-### YouTube
-- [JUG.ru](https://www.youtube.com/@JUGRu) — доклады senior-уровня
-- [1] https://www.youtube.com/watch?v=lRkIbVWcpg4
-- [3] https://www.youtube.com/watch?v=plbIWp4F_g0&list=PL0lO_mIqDDFUzG5WOCUVmqx4CBW2qIulV&index=1
-- [4] https://www.youtube.com/watch?v=hX-EIROSJRI
-- [5] https://www.youtube.com/watch?v=dS2P-cV-Uzg
-- [6] https://www.youtube.com/watch?v=xjusSinmONg
-- [7] https://www.youtube.com/watch?v=6Oo-9Can3H8
-- [8] https://www.youtube.com/watch?v=Z4hMFBvCDV4
-- [9] https://www.youtube.com/watch?v=WH5UvQJizH0
-- [10] https://www.youtube.com/watch?v=ImtZgX1nmr8
-- [11] https://www.youtube.com/watch?v=_RSAS-gIjGo
-- [12] https://www.youtube.com/watch?v=kj7dTH_soFQ
-- [13] https://www.youtube.com/watch?v=9RFklLvoOr4
-- [15] https://www.youtube.com/watch?v=0uwMKktzixU&list=PLiJ76e8LBYQVOHd1G3vva9FGV66sdV3N1
-- https://www.youtube.com/watch?v=L9pOB3uSupA&list=PLt91xr-Pp57T4tvQ4if78_I83QytkUhmG
-- https://www.youtube.com/watch?v=NCCQOw5d1lY
-- https://www.youtube.com/watch?v=t0MfXYz7_Gk
-- https://www.youtube.com/watch?v=oAXG7aUsF2Y
-- https://www.youtube.com/watch?v=OyxTqMlRNdU
-- https://www.youtube.com/watch?v=v5X2TJrSuCQ
