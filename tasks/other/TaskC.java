@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TaskC {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    scanner.netx
+    scanner.nextLine();
 
     // byte i = 20;
 

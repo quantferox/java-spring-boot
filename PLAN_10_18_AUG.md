@@ -1,7 +1,6 @@
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
-- [ ] volatile — visibility, happens-before, не атомарность
 - [ ] Java Memory Model — happens-before rules, memory barriers
 - [ ] Atomic* — CAS, compare-and-swap, ABA problem
 - [ ] Lock, ReentrantLock, ReadWriteLock — vs synchronized
@@ -36,13 +35,9 @@
 - [ ] **Unsafe** — что умеет, где Spring/Hibernate используют
 
 **Вечер (блок 3)**
-- [ ] `HashMap` internals — hash(), treeify, resize, load factor, capacity
-- [ ] `equals` / `hashCode` contract — нарушения, последствия
-- [ ] `Generics` — type erasure, wildcards (`? extends`, `? super`), PECS
 - [ ] `Stream API` — lazy evaluation, spliterator, parallel streams
 - [ ] `Optional` — правильное использование, антипаттерны
 - [ ] `String Pool`, `String.intern()`, `StringBuilder` vs `StringBuffer`
-- [ ] **Java 8+** — lambdas, method references, records (Java 16+), sealed classes, pattern matching
 
 ---
 
@@ -214,8 +209,6 @@
 - [ ] **Observability** — structured logging, OpenTelemetry, tracing, Correlation-ID (из SENIOR_EXTENDED)
 
 **День (блок 2) — JVM Tuning**
-- [ ] **Heap** — `-Xms`, `-Xmx`, Young/Old generation
-- [ ] **Stack** — `-Xss`, StackOverflowError
 - [ ] **Metaspace** — `-XX:MaxMetaspaceSize`, OutOfMemoryError
 - [ ] **G1 GC** — `-XX:+UseG1GC`, pause target, region size, mixed GC
 - [ ] **ZGC** — concurrent, sub-millisecond pauses, когда выбрать
@@ -233,7 +226,6 @@
 - [ ] `Hexagonal Architecture` — ports & adapters, inversion of control
 - [ ] `Onion Architecture` — слои, dependency direction
 - [ ] `Layered Architecture` — presentation → business → persistence, когда достаточно
-- [ ] `DDD` — Aggregate, Entity, Value Object, Repository, Domain Event, Bounded Context
 - [ ] `Microservices` — decomposition strategies, communication (sync/async)
 - [ ] `Modular Monolith` — vs Microservices, когда предпочтительнее
 - [ ] `Event Driven` — choreography vs orchestration
@@ -252,10 +244,7 @@
 - [ ] `Traefik` — dynamic configuration, Let's Encrypt
 - [ ] `Linux` — процессы, signals, `/proc`, `systemd`, journalctl
 - [ ] `Systemd` — unit files, systemctl, service lifecycle, targets
-- [ ] `Networking` — TCP handshake, DNS resolution, TLS/SSL, certificates (chain, CA)
-- [ ] `TLS` — handshake, symmetric/asymmetric encryption, certificate chain
 - [ ] `Certificates` — X.509, CA, self-signed, Let's Encrypt, keystore/truststore
-- [ ] `DNS` — A record, CNAME, TTL, round-robin DNS
 - [ ] `Jenkins` — pipeline as code, Jenkinsfile
 - [ ] `CI/CD` — stages: build → test → package → deploy
 - [ ] `Blue Green` — переключение трафика, rollback
@@ -263,10 +252,8 @@
 - [ ] `Rolling Update` — постепенная замена подов
 - [ ] **Docker** — multi-stage build, layered jar, docker-compose, healthcheck (из SENIOR_EXTENDED)
 - [ ] **Gradle** — `./gradlew bootJar`, `./gradlew dependencies`, Incremental builds, Build cache, `implementation`/`runtimeOnly`/`testImplementation` конфигурации (из SENIOR_EXTENDED)
-- [ ] **Git Advanced** — `git rebase -i`, `git cherry-pick`, `git bisect`, `git reflog`, `git stash`/`git stash pop`, Gitflow vs Trunk-based, Conventional Commits (`feat:`, `fix:`, `chore:`)
 
 **День (блок 2) — OOP + Enterprise Patterns**
-- [ ] `Encapsulation`, `Abstraction`, `Polymorphism`, `Inheritance`, `Immutability`
 - [ ] **GoF Creational**: Factory Method, Abstract Factory, Builder, Prototype, Singleton
 - [ ] **GoF Structural**: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
 - [ ] **GoF Behavioral**: Strategy, Observer, Command, State, Template Method, Chain of Responsibility, Mediator, Iterator, Visitor, Memento, Interpreter
@@ -344,7 +331,6 @@
 - [ ] Spring AutoConfiguration механизм — полный путь
 - [ ] BeanPostProcessor — 3 примера из Spring (AutowiredAnnotationBeanPostProcessor, etc.)
 - [ ] Hibernate dirty checking
-- [ ] N+1 — показать код до и после
 - [ ] CAP theorem — пример с MongoDB, Cassandra, PostgreSQL
 - [ ] Rate limiter design — token bucket алгоритм
 - [ ] Distributed lock — Redisson, fencing token
