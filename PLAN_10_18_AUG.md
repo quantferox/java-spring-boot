@@ -244,7 +244,6 @@
 - [ ] `Traefik` — dynamic configuration, Let's Encrypt
 - [ ] `Linux` — процессы, signals, `/proc`, `systemd`, journalctl
 - [ ] `Systemd` — unit files, systemctl, service lifecycle, targets
-- [ ] `Certificates` — X.509, CA, self-signed, Let's Encrypt, keystore/truststore
 - [ ] `Jenkins` — pipeline as code, Jenkinsfile
 - [ ] `CI/CD` — stages: build → test → package → deploy
 - [ ] `Blue Green` — переключение трафика, rollback
@@ -292,7 +291,6 @@
 ### Тема: Spring Source Code + Финальное закрепление + Mock Interview
 
 **Утро (блок 1) — Исходники Spring (уровень 18)**
-- [ ] Скачать Spring Framework исходники → читать через IDE
 - [ ] `BeanFactory` → `DefaultListableBeanFactory` — `getBean()`, `doGetBean()`
 - [ ] `AbstractApplicationContext` → `refresh()` — 12 шагов
 - [ ] `SpringApplication.run()` — от main() до первого HTTP запроса
