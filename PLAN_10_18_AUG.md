@@ -185,7 +185,6 @@
 - [ ] `Leader Election` — зачем нужен, кто решает
 - [ ] `Consensus` — Raft алгоритм — leader election, log replication
 - [ ] `Distributed Locks` — Redis (Redisson), ZooKeeper, проблемы
-- [ ] `Idempotency` — idempotency key, at-least-once vs exactly-once
 - [ ] `Retry` — exponential backoff, jitter
 - [ ] `Circuit Breaker` — Resilience4j: CLOSED → OPEN → HALF_OPEN
 - [ ] `Backpressure` — как producer не перегружает consumer
