@@ -1,21 +1,14 @@
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
-- [ ] Java Memory Model — happens-before rules, memory barriers
-- [ ] Atomic* — CAS, compare-and-swap, ABA problem
-- [ ] Lock, ReentrantLock, ReadWriteLock — vs synchronized
-- [ ] wait() / notify() / notifyAll() — условие, spurious wakeup
-- [ ] Race Condition — примеры, как воспроизвести и исправить
 - [ ] Visibility — что видит один поток из другого без синхронизации
 - [ ] Exceptions — checked vs unchecked, иерархия, try-with-resources, multicatch, custom exceptions, ExceptionInInitializerError
 - [ ] ExecutorService, ThreadPool, Executor — internals
 - [ ] CompletableFuture — chain, thenApply, thenCompose, exceptionally, allOf
 - [ ] ForkJoinPool — work stealing, рекурсивные задачи
 - [ ] ConcurrentHashMap, BlockingQueue — внутренняя реализация
-- [ ] CountDownLatch, CyclicBarrier, Semaphore — разница и применение
 
 ## 🗓 ДЕНЬ 2 — 11 августа (понедельник)
-### Тема: Java Core — JVM Internals + Collections + Generics
 
 **Утро (блок 1)**
 - [ ] **JVM Internals**: ClassLoader hierarchy, delegation model, загрузка классов
@@ -86,17 +79,14 @@
 ### Тема: Spring MVC + Spring Data / Hibernate (уровни 4–5)
 
 **Утро (блок 1) — Spring MVC Internals**
-- [ ] `DispatcherServlet` — полный request pipeline
 - [ ] `HandlerMapping` — `RequestMappingHandlerMapping`, как находит handler
 - [ ] `HandlerAdapter` — `RequestMappingHandlerAdapter`
 - [ ] `ArgumentResolver` — `HandlerMethodArgumentResolver`, как парсится тело запроса
-- [ ] `ReturnValueHandler` — как сериализуется ответ
 - [ ] `MessageConverter` — `HttpMessageConverter`, JSON, XML
 - [ ] `ExceptionResolver` — `@ControllerAdvice`, `@ExceptionHandler`
-- [ ] `ViewResolver` — только концепция (для REST не нужен глубоко)
 - [ ] `Filter` vs `Interceptor` — разница, когда что использовать
 - [ ] **Embedded containers**: Embedded Tomcat, Undertow, Jetty — как встраиваются, auto-configuration
-- [ ] **Servlet API** — ServletContext, HttpServletRequest/Response
+
 
 **День (блок 2) — Spring Data + JPA**
 - [ ] `Persistence Context` — first-level cache, scope
@@ -152,7 +142,6 @@
 - [ ] `Deadlocks` — как обнаружить, `pg_locks`, `pg_stat_activity`
 - [ ] `Planner` — statistics, `ANALYZE`, `pg_statistic`
 - [ ] **SQL Advanced**: Window Functions, CTE, lateral joins; уровни изоляции: Dirty Read, Non-repeatable Read, Phantom Read (из SENIOR_EXTENDED)
-- [ ] **REST API Design** — HTTP methods, idempotency; статус коды: `200 OK`, `201 Created`, `204 No Content`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `409 Conflict`, `422 Unprocessable Entity`, `500 Internal Server Error`, `502 Bad Gateway`, `503 Service Unavailable`; versioning, pagination, HATEOAS, `springdoc-openapi` / Swagger UI, Cursor-based pagination (из SENIOR_EXTENDED)
 
 ---
 
@@ -218,7 +207,6 @@
 - [ ] **Virtual Threads** (Project Loom) — создание, ограничения, carrier threads
 - [ ] **Structured Concurrency** — StructuredTaskScope
 - [ ] **NIO** — Channels, Buffers, Selectors, non-blocking I/O
-- [ ] **Network Programming** — TCP/IP, сокеты, HTTP client
 
 **Вечер (блок 3) — Architecture**
 - [ ] `Clean Architecture` — dependency rule, use cases, entities
