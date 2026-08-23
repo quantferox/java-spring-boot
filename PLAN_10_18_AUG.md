@@ -1,12 +1,7 @@
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
-1)DeadLock
-2)syncronization
-3)volatile — visibility, happens-before, не атомарность
-4)`equals` / `hashCode` contract — нарушения, последствия
 5)N+1 — показать код до и после
-6)`DDD` — Aggregate, Entity, Value Object, Repository, Domain Event, Bounded Context
 7)- [ ] `Certificates` — X.509, CA, self-signed, Let's Encrypt, keystore/truststore
 8)Lock, ReentrantLock, ReadWriteLock — vs synchronized
 9)- [ ] **Servlet API** — ServletContext, HttpServletRequest/Response
