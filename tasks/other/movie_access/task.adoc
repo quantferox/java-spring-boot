@@ -1,0 +1,11 @@
+Filmə Giriş
+
+Yaş və bilet növü daxil edilir.
+
+Şərtlər:
+
+Yaş ≥ 18 → daxil ola bilər
+Yaş < 18 və VIP bileti varsa → daxil ola bilər
+Əks halda → daxil ola bilməz
+
+Burada istifadə etmək məcburiyyətində qalacaqlar.

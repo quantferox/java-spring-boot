@@ -1,0 +1,10 @@
+Yol Polisi
+
+Sürət və təhlükəsizlik kəmərinin taxılıb-taxılmaması daxil edilir.
+
+Şərtlər:
+
+Sürət > 120 və kəmər taxılmayıb → 2 cərimə
+Sürət > 120 → sürət cəriməsi
+Kəmər taxılmayıb → kəmər cəriməsi
+Əks halda → problem yoxdur

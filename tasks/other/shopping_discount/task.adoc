@@ -1,0 +1,12 @@
+İstifadəçidən:
+
+alış-veriş məbləği
+müştəri kartının olub-olmaması
+
+alın.
+
+Şərtlər:
+
+Məbləğ > 100 və kartı varsa → 20% endirim
+Məbləğ > 100 və kartı yoxdursa → 10% endirim
+Əks halda → endirim yoxdur

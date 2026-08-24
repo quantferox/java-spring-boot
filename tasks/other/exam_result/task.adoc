@@ -1,0 +1,13 @@
+İmtahan Nəticəsi
+
+Bal daxil edilir.
+
+91-100 → A
+81-90 → B
+71-80 → C
+51-70 → D
+0-50 → F
+
+Əlavə olaraq:
+
+Bal 0-dan kiçik və ya 100-dən böyükdürsə → "Yanlış bal"

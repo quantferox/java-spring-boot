@@ -1,0 +1,14 @@
+Giriş Sistemi
+
+Login və şifrə daxil edilir.
+
+Düzgün məlumatlar:
+
+login = admin
+şifrə = 12345
+
+Şərtlər:
+
+Hər ikisi düzdür → Giriş uğurlu
+Login səhvdir
+Şifrə səhvdir

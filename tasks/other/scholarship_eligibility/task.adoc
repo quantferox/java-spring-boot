@@ -1,0 +1,40 @@
+İstifadəçidən aşağıdakı məlumatları alın:
+
+average (orta bal)
+attendance (davamiyyət faizi)
+hasDisciplinePenalty (intizam cəzası var? true/false)
+Qaydalar
+
+Əgər:
+
+hasDisciplinePenalty == true
+
+→ "Təqaüd ala bilməzsiniz."
+
+Əks halda, əgər:
+
+average > 90 && attendance > 85
+
+→ "Tam təqaüd qazandınız."
+
+Əks halda, əgər:
+
+average > 75 && attendance > 75
+
+→ "Qismən təqaüd qazandınız."
+
+Əks halda, əgər:
+
+average < 50 || attendance < 50
+
+→ "Akademik risk qrupundasınız."
+
+Əks halda, əgər:
+
+hasDisciplinePenalty != true && average > 60
+
+→ "Təqaüd qazanmadınız, amma nəticələriniz qənaətbəxşdir."
+
+Əks halda:
+
+→ "Nəticələr kifayət etmir."

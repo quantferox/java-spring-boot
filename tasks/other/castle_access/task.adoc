@@ -1,0 +1,31 @@
+Bir oyun düşünək. Oyunçu qalaya daxil olmaq istəyir.
+
+İstifadəçidən aşağıdakı məlumatları alın:
+
+level
+gold (qızıl sayı)
+hasKey (true/false)
+isWanted (true/false) — axtarışda olub-olmaması
+
+Qaydalar
+Əgər oyunçu axtarışdadırsa (isWanted == true)
+"Qalaya giriş qadağandır!"
+
+Əks halda, əgər:
+level > 15 && hasKey == true
+"Qalaya daxil oldunuz."
+
+Əks halda, əgər:
+level > 15 && gold >= 500
+"Açarınız yoxdur, amma qapını satın aldınız."
+
+Əks halda, əgər:
+level < 5 gold < 100
+"Çox zəifsiniz. Daha çox məşq edin."
+
+Əks halda, əgər:
+hasKey != true && gold > 100 && gold < 500
+"Qapını almaq üçün kifayət qədər qızılınız yoxdur."
+
+Əks halda:
+"Şərtlər ödənmir."

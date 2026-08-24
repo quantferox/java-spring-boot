@@ -1,0 +1,9 @@
+Bankomat
+
+Balans və çıxarmaq istədiyi məbləğ daxil edilir.
+
+Şərtlər:
+
+Məbləğ ≤ 0 → səhv məbləğ
+Məbləğ > balans → vəsait kifayət deyil
+Əks halda → əməliyyat uğurludur
