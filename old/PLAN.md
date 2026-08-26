@@ -1,14 +1,61 @@
+volatile — visibility, happens-before, не атомарность теперь это
+equals / hashCode contract — нарушения, последствия теперь это
+DDD — Aggregate, Entity, Value Object, Repository, Domain Event, Bounded Context
+syncronization
+DeadLock
+8)**Heap** — -Xms, -Xmx, Young/Old generation
+9)**Stack** — -Xss, StackOverflowError
+7)HashMap internals — hash(), treeify, resize, load factor, capacity
+- [ ] Idempotency — idempotency key, at-least-once vs exactly-once
+TLS — handshake, symmetric/asymmetric encryption, certificate chain
+Spring Boot DevTools
+https://spring.io/guides
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/package-summary.html
+
+
+1)Baeldung — Spring Boot практика
+2)- [ ] **Heap / Stack / Metaspace** — что где хранится, примеры OOM
+3)- [ ] **Unsafe** — что умеет, где Spring/Hibernate используют
+4)- [ ] Race Condition — примеры, как воспроизвести и исправить
+7)- [ ] `Certificates` — X.509, CA, self-signed, Let's Encrypt, keystore/truststore
+8)Lock, ReentrantLock, ReadWriteLock — vs synchronized
+5)N+1 — показать код до и после
+- [ ] `Stream API` — lazy evaluation, spliterator, parallel streams
+- [ ] `Optional` — правильное использование, антипаттерны
+- [ ] `String Pool`, `String.intern()`, `StringBuilder` vs `StringBuffer`
+
+Official Apache Maven documentation
+Spring Framework Source
+Vlad Mihalcea — JPA/Hibernate
+Thorben Janssen — Hibernate tips
+Martin Fowler — Architecture Patterns
+PostgreSQL docs — indexes
+Serving Web Content with Spring MVC
+
+[1] https://www.youtube.com/watch?v=lRkIbVWcpg4
+[3] https://www.youtube.com/watch?v=plbIWp4F_g0&list=PL0lO_mIqDDFUzG5WOCUVmqx4CBW2qIulV&index=1
+[4] https://www.youtube.com/watch?v=hX-EIROSJRI
+[5] https://www.youtube.com/watch?v=dS2P-cV-Uzg
+[6] https://www.youtube.com/watch?v=xjusSinmONg
+[8] https://www.youtube.com/watch?v=Z4hMFBvCDV4
+[11] https://www.youtube.com/watch?v=_RSAS-gIjGo
+[12] https://www.youtube.com/watch?v=kj7dTH_soFQ
+[13] https://www.youtube.com/watch?v=9RFklLvoOr4
+[15] https://www.youtube.com/watch?v=0uwMKktzixU&list=PLiJ76e8LBYQVOHd1G3vva9FGV66sdV3N1
+https://www.youtube.com/watch?v=L9pOB3uSupA&list=PLt91xr-Pp57T4tvQ4if78_I83QytkUhmG
+https://www.youtube.com/watch?v=NCCQOw5d1lY
+https://www.youtube.com/watch?v=t0MfXYz7_Gk
+https://www.youtube.com/watch?v=oAXG7aUsF2Y
+https://www.youtube.com/watch?v=OyxTqMlRNdU
+https://www.youtube.com/watch?v=v5X2TJrSuCQ
+
 # 📅 План подготовки Strong Senior Java Dev
 ## 10 августа — 18 августа 2026 (9 дней)
 
-5)N+1 — показать код до и после
-7)- [ ] `Certificates` — X.509, CA, self-signed, Let's Encrypt, keystore/truststore
-8)Lock, ReentrantLock, ReadWriteLock — vs synchronized
 9)- [ ] **Servlet API** — ServletContext, HttpServletRequest/Response
 10)- [ ] `DispatcherServlet` — полный request pipelined
 11)- [ ] `ReturnValueHandler` — как сериализуется ответ
 12)- [ ] `ViewResolver` — только концепция (для REST не нужен глубоко)
-13)- [ ] Race Condition — примеры, как воспроизвести и исправить
 14)- [ ] CountDownLatch, CyclicBarrier, Semaphore — разница и применение
 15)- [ ] Java Memory Model — happens-before rules, memory barriers
 16)- [ ] Atomic* — CAS, compare-and-swap, ABA problem
@@ -26,7 +73,6 @@
 
 **Утро (блок 1)**
 - [ ] **JVM Internals**: ClassLoader hierarchy, delegation model, загрузка классов
-- [ ] **Heap / Stack / Metaspace** — что где хранится, примеры OOM
 - [ ] **GC** — G1 (regions, mixed GC, evacuation failure), ZGC, Shenandoah
 - [ ] **Garbage Collectors** — serial, parallel, CMS (deprecated), G1, ZGC, Shenandoah — сравнение и выбор
 - [ ] **JIT** — C1/C2 compiler, tiered compilation, deoptimization
@@ -39,14 +85,7 @@
 - [ ] **Reflection** — getDeclaredMethods, setAccessible, performance cost
 - [ ] **Annotation Processing** — APT, как работает во время компиляции
 - [ ] **MethodHandle** — vs Reflection, LambdaMetafactory
-- [ ] **Unsafe** — что умеет, где Spring/Hibernate используют
 
-**Вечер (блок 3)**
-- [ ] `Stream API` — lazy evaluation, spliterator, parallel streams
-- [ ] `Optional` — правильное использование, антипаттерны
-- [ ] `String Pool`, `String.intern()`, `StringBuilder` vs `StringBuffer`
-
----
 
 ## 🗓 ДЕНЬ 3 — 12 августа (вторник)
 ### Тема: Spring Core + Boot Internals (уровни 2–3)
