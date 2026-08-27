@@ -1,16 +1,3 @@
-# 🗓 План подготовки: Strong Senior Java Dev
-## 📅 27 августа — 30 сентября 2026 (35 дней)
-
-> **Режим дня:**
-> - 🌅 **Утро** → `10:00 – 12:30` (2.5 часа)
-> - ☀️ **День** → `14:00 – 16:30` (2.5 часа)
-> - 🌙 **Вечер** → `19:00 – 21:00` (2 часа)
-> - 🎮 Остальное время — твоё. Игры, отдых, жизнь.
->
-> **Итого:** ~7 часов в день / ~245 часов за весь период
-
----
-
 ## 📚 Ресурсы (держи открытыми всё время)
 
 | Тип | Ресурс |
@@ -45,24 +32,15 @@
 | — | https://www.youtube.com/watch?v=oAXG7aUsF2Y |
 | — | https://www.youtube.com/watch?v=OyxTqMlRNdU |
 | — | https://www.youtube.com/watch?v=v5X2TJrSuCQ |
+| — | https://www.youtube.com/watch?v=Cx_sEm0ygIA |
+| — | https://www.youtube.com/watch?v=ygu753Apm-0 |
+| — | https://www.youtube.com/watch?v=H01NmrEFATI |
+| — | https://www.youtube.com/watch?v=c7TIkimWk4g |
+| — | https://www.youtube.com/watch?v=KPiFWU8bJDA |
+| — | https://www.youtube.com/watch?v=NCCQOw5d1lY&t=4s |
 
----
 
-## 🧱 БЛОК 1 — JVM Internals (Дни 1–5)
-> Фундамент. Без этого Spring internals непонятен.
 
----
-
-### 📅 ДЕНЬ 1 — 27 августа (четверг)
-**Тема: JVM — Память**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **Память JVM** | **Heap** — `-Xms`, `-Xmx`, Young/Old generation; **Stack** — `-Xss`, StackOverflowError; **Heap / Stack / Metaspace** — что где хранится, примеры OOM |
-| ☀️ 14:00–16:30 | **Metaspace + Unsafe** | **Metaspace** — `-XX:MaxMetaspaceSize`, OutOfMemoryError; **Unsafe** — что умеет, где Spring/Hibernate используют |
-| 🌙 19:00–21:00 | **ClassLoader** | ClassLoader hierarchy, delegation model, загрузка классов |
-
----
 
 ### 📅 ДЕНЬ 2 — 28 августа (пятница)
 **Тема: JVM — GC**
