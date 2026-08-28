@@ -41,29 +41,6 @@
 
 
 
-
-### 📅 ДЕНЬ 2 — 28 августа (пятница)
-**Тема: JVM — GC**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **Garbage Collectors** | **GC** — G1 (regions, mixed GC, evacuation failure), ZGC, Shenandoah; **Garbage Collectors** — Serial, Parallel, CMS (deprecated), G1, ZGC, Shenandoah — сравнение и выбор |
-| ☀️ 14:00–16:30 | **JIT + Оптимизации** | **JIT** — C1/C2 compiler, tiered compilation, deoptimization; **Escape Analysis** — stack allocation, scalar replacement; **TLAB**, **Compressed Oops**, **Safepoints** |
-| 🌙 19:00–21:00 | **GC Tuning** | **G1 GC** — `-XX:+UseG1GC`, pause target, region size, mixed GC; **ZGC** — concurrent, sub-millisecond pauses, когда выбрать; **Shenandoah** — concurrent evacuation, Red Hat |
-
----
-
-### 📅 ДЕНЬ 3 — 29 августа (суббота)
-**Тема: JVM — Bytecode, Reflection, MethodHandle**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **Bytecode** | **Bytecode** — javap, как читать, invokedynamic |
-| ☀️ 14:00–16:30 | **Reflection** | **Reflection** — getDeclaredMethods, setAccessible, performance cost; **Annotation Processing** — APT, как работает во время компиляции |
-| 🌙 19:00–21:00 | **MethodHandle** | **MethodHandle** — vs Reflection, LambdaMetafactory |
-
----
-
 ### 📅 ДЕНЬ 4 — 30 августа (воскресенье)
 **Тема: Java Concurrency — основы**
 
