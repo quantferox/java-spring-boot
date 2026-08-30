@@ -41,28 +41,6 @@
 
 
 
-### 📅 ДЕНЬ 4 — 30 августа (воскресенье)
-**Тема: Java Concurrency — основы**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **JMM + Visibility** | **Java Memory Model** — happens-before rules, memory barriers; **Visibility** — что видит один поток из другого без синхронизации; **volatile** — visibility, happens-before, не атомарность |
-| ☀️ 14:00–16:30 | **Синхронизация** | **synchronization**; **DeadLock**; **Race Condition** — примеры, как воспроизвести и исправить; **wait() / notify() / notifyAll()** — условие, spurious wakeup |
-| 🌙 19:00–21:00 | **Locks** | **Lock, ReentrantLock, ReadWriteLock** — vs synchronized; **Concurrency в JVM** — как JVM управляет потоками, monitor object, thread states на уровне JVM |
-
----
-
-### 📅 ДЕНЬ 5 — 31 августа (понедельник)
-**Тема: Java Concurrency — продвинутое**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **Atomic + Barriers** | **Atomic\*** — CAS, compare-and-swap, ABA problem; **CountDownLatch, CyclicBarrier, Semaphore** — разница и применение |
-| ☀️ 14:00–16:30 | **Thread Pools** | **ExecutorService, ThreadPool, Executor** — internals; **CompletableFuture** — chain, thenApply, thenCompose, exceptionally, allOf |
-| 🌙 19:00–21:00 | **Advanced Concurrency** | **ForkJoinPool** — work stealing, рекурсивные задачи; **ConcurrentHashMap, BlockingQueue** — внутренняя реализация; **Virtual Threads** (Project Loom) — создание, ограничения, carrier threads; **Structured Concurrency** — StructuredTaskScope |
-
----
-
 ## 🌱 БЛОК 2 — Java Core (Дни 6–7)
 > Быстрый прогон — большинство знаешь из C#.
 
