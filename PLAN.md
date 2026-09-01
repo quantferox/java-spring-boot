@@ -41,22 +41,6 @@
 
 
 
-## 🌱 БЛОК 2 — Java Core (Дни 6–7)
-> Быстрый прогон — большинство знаешь из C#.
-
----
-
-### 📅 ДЕНЬ 6 — 1 сентября (вторник)
-**Тема: Java Core — Collections + Streams**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **Collections Internals** | **HashMap internals** — hash(), treeify, resize, load factor, capacity; **equals / hashCode contract** — нарушения, последствия |
-| ☀️ 14:00–16:30 | **Stream API + Optional** | **Stream API** — lazy evaluation, spliterator, parallel streams; **Optional** — правильное использование, антипаттерны |
-| 🌙 19:00–21:00 | **Strings + Exceptions** | **String Pool**, `String.intern()`, **StringBuilder vs StringBuffer**; **Exceptions** — checked vs unchecked, иерархия, try-with-resources, multicatch, custom exceptions, ExceptionInInitializerError |
-
----
-
 ### 📅 ДЕНЬ 7 — 2 сентября (среда)
 **Тема: Java Core — NIO + Functional Interfaces**
 
