@@ -41,17 +41,6 @@
 
 
 
-### 📅 ДЕНЬ 7 — 2 сентября (среда)
-**Тема: Java Core — NIO + Functional Interfaces**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **NIO** | **NIO** — Channels, Buffers, Selectors, non-blocking I/O |
-| ☀️ 14:00–16:30 | **Functional Interfaces** | **Functional Interfaces** — Function, Predicate, Consumer, Supplier, BiFunction и практика |
-| 🌙 19:00–21:00 | **Повторение блока 1–2** | Закрепление JVM + Concurrency — пройтись по вопросам, объяснить устно |
-
----
-
 ## 🍃 БЛОК 3 — Spring Core Internals (Дни 8–12)
 > Ты знаешь ASP.NET DI — здесь будет "узнавание", не изучение с нуля.
 
