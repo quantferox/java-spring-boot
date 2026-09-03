@@ -41,22 +41,6 @@
 
 
 
-## 🍃 БЛОК 3 — Spring Core Internals (Дни 8–12)
-> Ты знаешь ASP.NET DI — здесь будет "узнавание", не изучение с нуля.
-
----
-
-### 📅 ДЕНЬ 8 — 3 сентября (четверг)
-**Тема: Spring — BeanFactory и BeanDefinition**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **BeanFactory** | `BeanFactory`, `DefaultListableBeanFactory` — как хранит и создаёт бины; `BeanDefinition` — что это, как регистрируется; `BeanDefinitionReader`, `ClassPathBeanDefinitionScanner` |
-| ☀️ 14:00–16:30 | **Bean Scopes + Context** | **Spring Beans** — scopes (singleton, prototype, request, session), lazy init, depends-on; `ApplicationContext` — иерархия, refresh(), events; **Spring Context** — иерархия контекстов, parent/child context, refresh lifecycle |
-| 🌙 19:00–21:00 | **Bean Lifecycle** | `AbstractAutowireCapableBeanFactory` — createBean() полный цикл; **Bean Lifecycle**: instantiation → populate → Aware → BeanPostProcessor → init → use → destroy |
-
----
-
 ### 📅 ДЕНЬ 9 — 4 сентября (пятница)
 **Тема: Spring — BeanPostProcessor + AOP + Events**
 
