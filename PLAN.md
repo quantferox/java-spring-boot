@@ -41,17 +41,6 @@
 
 
 
-### 📅 ДЕНЬ 9 — 4 сентября (пятница)
-**Тема: Spring — BeanPostProcessor + AOP + Events**
-
-| Время | Блок | Темы |
-|-------|------|------|
-| 🌅 10:00–12:30 | **BeanPostProcessor** | `BeanPostProcessor` — postProcessBefore/AfterInitialization, примеры (AutowiredAnnotationBeanPostProcessor и др.); `BeanFactoryPostProcessor` — когда вызывается, зачем |
-| ☀️ 14:00–16:30 | **FactoryBean + AOP** | `FactoryBean` — vs обычный бин, `&beanName`; **Spring AOP** — `CglibAopProxy`, `ProxyFactory`, `TransactionInterceptor` |
-| 🌙 19:00–21:00 | **Spring Events + SpEL** | **Spring Events** — ApplicationEventPublisher, @EventListener, async events; **Spring Expression Language (SpEL)** — синтаксис, применение в @Value, @Conditional |
-
----
-
 ### 📅 ДЕНЬ 10 — 5 сентября (суббота)
 **Тема: Spring Boot Internals**
 
