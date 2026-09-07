@@ -13,32 +13,20 @@
 | PostgreSQL | [PostgreSQL docs — indexes](https://www.postgresql.org/docs/) |
 | Spring MVC | [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/) |
 
-### 🎥 YouTube
-| # | Ссылка |
-|---|--------|
-| 1 | https://www.youtube.com/watch?v=lRkIbVWcpg4 |
-| 3 | https://www.youtube.com/watch?v=plbIWp4F_g0&list=PL0lO_mIqDDFUzG5WOCUVmqx4CBW2qIulV&index=1 |
-| 4 | https://www.youtube.com/watch?v=hX-EIROSJRI |
-| 5 | https://www.youtube.com/watch?v=dS2P-cV-Uzg |
-| 6 | https://www.youtube.com/watch?v=xjusSinmONg |
-| 8 | https://www.youtube.com/watch?v=Z4hMFBvCDV4 |
-| 11 | https://www.youtube.com/watch?v=_RSAS-gIjGo |
-| 12 | https://www.youtube.com/watch?v=kj7dTH_soFQ |
-| 13 | https://www.youtube.com/watch?v=9RFklLvoOr4 |
-| 15 | https://www.youtube.com/watch?v=0uwMKktzixU&list=PLiJ76e8LBYQVOHd1G3vva9FGV66sdV3N1 |
-| — | https://www.youtube.com/watch?v=L9pOB3uSupA&list=PLt91xr-Pp57T4tvQ4if78_I83QytkUhmG |
-| — | https://www.youtube.com/watch?v=NCCQOw5d1lY |
-| — | https://www.youtube.com/watch?v=t0MfXYz7_Gk |
-| — | https://www.youtube.com/watch?v=oAXG7aUsF2Y |
-| — | https://www.youtube.com/watch?v=OyxTqMlRNdU |
-| — | https://www.youtube.com/watch?v=v5X2TJrSuCQ |
-| — | https://www.youtube.com/watch?v=Cx_sEm0ygIA |
-| — | https://www.youtube.com/watch?v=ygu753Apm-0 |
-| — | https://www.youtube.com/watch?v=H01NmrEFATI |
-| — | https://www.youtube.com/watch?v=c7TIkimWk4g |
-| — | https://www.youtube.com/watch?v=KPiFWU8bJDA |
-| — | https://www.youtube.com/watch?v=NCCQOw5d1lY&t=4s |
 
+
+| 🌅 10:00–12:30 | **Collections Internals** | **HashMap internals** — hash(), treeify, resize, load factor, capacity; **equals / hashCode contract** — нарушения, последствия |
+| ☀️ 14:00–16:30 | **Stream API + Optional** | **Stream API** — lazy evaluation, spliterator, parallel streams; **Optional** — правильное использование, антипаттерны |
+| 🌙 19:00–21:00 | **Strings + Exceptions** | **String Pool**, `String.intern()`, **StringBuilder vs StringBuffer**; **Exceptions** — checked vs unchecked, иерархия, try-with-resources, multicatch, custom exceptions, ExceptionInInitializerError |
+| 🌅 10:00–12:30 | **NIO** | **NIO** — Channels, Buffers, Selectors, non-blocking I/O |
+| ☀️ 14:00–16:30 | **Functional Interfaces** | **Functional Interfaces** — Function, Predicate, Consumer, Supplier, BiFunction и практика |
+| 🌙 19:00–21:00 | **Повторение блока 1–2** | Закрепление JVM + Concurrency — пройтись по вопросам, объяснить устно |
+| 🌅 10:00–12:30 | **BeanFactory** | `BeanFactory`, `DefaultListableBeanFactory` — как хранит и создаёт бины; `BeanDefinition` — что это, как регистрируется; `BeanDefinitionReader`, `ClassPathBeanDefinitionScanner` |
+| ☀️ 14:00–16:30 | **Bean Scopes + Context** | **Spring Beans** — scopes (singleton, prototype, request, session), lazy init, depends-on; `ApplicationContext` — иерархия, refresh(), events; **Spring Context** — иерархия контекстов, parent/child context, refresh lifecycle |
+| 🌙 19:00–21:00 | **Bean Lifecycle** | `AbstractAutowireCapableBeanFactory` — createBean() полный цикл; **Bean Lifecycle**: instantiation → populate → Aware → BeanPostProcessor → init → use → destroy |
+| 🌅 10:00–12:30 | **BeanPostProcessor** | `BeanPostProcessor` — postProcessBefore/AfterInitialization, примеры (AutowiredAnnotationBeanPostProcessor и др.); `BeanFactoryPostProcessor` — когда вызывается, зачем |
+| ☀️ 14:00–16:30 | **FactoryBean + AOP** | `FactoryBean` — vs обычный бин, `&beanName`; **Spring AOP** — `CglibAopProxy`, `ProxyFactory`, `TransactionInterceptor` |
+| 🌙 19:00–21:00 | **Spring Events + SpEL** | **Spring Events** — ApplicationEventPublisher, @EventListener, async events; **Spring Expression Language (SpEL)** — синтаксис, применение в @Value, @Conditional |
 
 
 ### 📅 ДЕНЬ 10 — 5 сентября (суббота)
