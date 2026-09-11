@@ -1,0 +1,71 @@
+package make_steps_in_order;
+/**
+ * ЗАДАЧА:
+ *
+ * Есть "робот" с двумя ногами: нога 1 и нога 2.
+ * Для каждой ноги создаётся отдельный поток.
+ *
+ * Требуется сделать так, чтобы:
+ * - потоки по очереди делали шаги:
+ * "Make step by leg: 1"
+ * "Make step by leg: 2"
+ * "Make step by leg: 1"
+ * "Make step by leg: 2"
+ * - порядок был строго чередующийся (1, 2, 1, 2, 1, 2, ...),
+ * без ситуаций вроде "1, 1, 2" или "2, 2, 1".
+ * - не было активного ожидания (busy waiting) - нужно
+ * использовать средства синхронизации Java:
+ * synchronized / wait / notify
+ * ИЛИ Lock / Condition
+ * или другие корректные примитивы.
+ *
+ * Ограничения:
+ * - Можно менять код класса Foot и main, добавлять поля,
+ * синхронизаторы и т.п.
+ * - Важно, чтобы решение было потокобезопасным.
+ */
+public class MakeStepsInOrder {
+
+  private static class Foot implements Runnable {
+
+    private final int number;
+
+    public Foot(int number) {
+      this.number = number;
+    }
+
+    /**
+     * Этот метод просто печатает шаг текущей "ноги".
+     * Добавить логику синхронизации.
+     */
+    public void makeStep() {
+      System.out.println("Make step by leg: " + number);
+      // TODO: добавить логику синхронизации
+    }
+
+    @Override
+    public void run() {
+      while (!Thread.currentThread().isInterrupted()) {
+        makeStep();
+        // TODO: при необходимости обработать InterruptedException
+      }
+    }
+  }
+
+  public static void main(String[] args) throws InterruptedException {
+    var thread1 = new Thread(new Foot(1));
+    var thread2 = new Thread(new Foot(2));
+
+    // Запускаем оба потока. Они должны начать
+    // корректно чередовать шаги.
+    thread1.start();
+    thread2.start();
+
+    // Даём роботу походить 1 секунду.
+    Thread.sleep(1000);
+
+    // После этого аккуратно останавливаем потоки через interrupt().
+    thread1.interrupt();
+    thread2.interrupt();
+  }
+}
