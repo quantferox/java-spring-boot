@@ -1,7 +1,7 @@
-package make_steps_in_order;
+package tasks.plan.make_steps_in_order;
 
 public class MakeStepsInOrder {
-  private static final int MAX_COUNT_LEGS = 4;
+  private static final int MAX_COUNT_LEGS = 2;
   private static int currentLeg = 1;
   private final static Object lock = new Object();
 
@@ -14,17 +14,12 @@ public class MakeStepsInOrder {
 
     public void makeStep() throws InterruptedException {
       synchronized (lock) {
-        if (currentLeg >= MAX_COUNT_LEGS + 1) {
-          currentLeg = 1;
-        }
-
-        if (number == currentLeg) {
-          System.out.println("Make step by leg: " + this.number);
-          currentLeg++;
-          lock.notifyAll();
-        } else {
+        while (number != currentLeg) {
           lock.wait();
         }
+        System.out.println("Make step by leg: " + this.number);
+        currentLeg = (currentLeg % MAX_COUNT_LEGS) + 1;
+        lock.notifyAll();
       }
     }
 
@@ -32,7 +27,6 @@ public class MakeStepsInOrder {
     public void run() {
       while (!Thread.currentThread().isInterrupted()) {
         try {
-
           makeStep();
         } catch (InterruptedException error) {
           Thread.currentThread().interrupt();
@@ -52,6 +46,10 @@ public class MakeStepsInOrder {
 
     for (Thread thread : threads) {
       thread.interrupt();
+    }
+
+    for (Thread thread : threads) {
+      thread.join();
     }
   }
 }
