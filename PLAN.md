@@ -1,5 +1,19 @@
 ## 📚 Ресурсы (держи открытыми всё время)
 
+| Тип | Ресурс |
+|-----|--------|
+| Практика | [Baeldung — Spring Boot практика](https://www.baeldung.com) |
+| Официально | [spring.io/guides](https://spring.io/guides) |
+| Официально | [Spring Framework Javadoc](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/package-summary.html) |
+| Официально | [Official Apache Maven documentation](https://maven.apache.org/guides/) |
+| Официально | [Spring Framework Source](https://github.com/spring-projects/spring-framework) |
+| JPA/Hibernate | [Vlad Mihalcea — JPA/Hibernate](https://vladmihalcea.com) |
+| Hibernate | [Thorben Janssen — Hibernate tips](https://thorben-janssen.com) |
+| Архитектура | [Martin Fowler — Architecture Patterns](https://martinfowler.com) |
+| PostgreSQL | [PostgreSQL docs — indexes](https://www.postgresql.org/docs/) |
+| Spring MVC | [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/) |
+
+
 
 | 🌅 10:00–12:30 | **Collections Internals** | **HashMap internals** — hash(), treeify, resize, load factor, capacity; **equals / hashCode contract** — нарушения, последствия |
 | ☀️ 14:00–16:30 | **Stream API + Optional** | **Stream API** — lazy evaluation, spliterator, parallel streams; **Optional** — правильное использование, антипаттерны |
