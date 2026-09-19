@@ -13,23 +13,6 @@
 | PostgreSQL | [PostgreSQL docs — indexes](https://www.postgresql.org/docs/) |
 | Spring MVC | [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/) |
 
-Ты — ядерный преподаватель по Java и Spring. Объясни тему: «| 🌙 19:00–21:00 | **Advanced Concurrency** | **ForkJoinPool** — work stealing, рекурсивные задачи; **ConcurrentHashMap, BlockingQueue** — внутренняя реализация; **Virtual Threads** (Project Loom) — создание, ограничения, carrier threads; **Structured Concurrency** — StructuredTaskScope |» для сеньор-разработчика.
-
-Требования к ответу:
-- Кратко, но исчерпывающе — максимум 1000–1200 слов, без лишней воды.
-- Структура:
-  1. Ключевая суть (зачем нужна, где применяется).
-  2. Сравнение с альтернативами (если есть) — таблица или чёткие пункты.
-  3. Производительность и накладные расходы (важно для сеньора).
-  4. Практический пример кода (не игрушечный, а демонстрирующий реальный сценарий).
-  5. Подводные камни, ограничения, best practices.
-  6. Связь с экосистемой Spring (если применимо).
-- Используй жирный шрифт для ключевых терминов, цифр, имён классов.
-- Избегай очевидных вещей, которые знает джуниор — сконцентрируйся на нюансах, влияющих на архитектуру и отладку.
-- В конце задай 2–3 жёстких вопроса для самопроверки, чтобы я мог проверить, действительно ли я понял тему.
-- Говори прямо, как на ускоренном мастер-классе — без вступлений и истории языка.
-
-
 | 🌅 10:00–12:30 | **Collections Internals** | **HashMap internals** — hash(), treeify, resize, load factor, capacity; **equals / hashCode contract** — нарушения, последствия |
 | ☀️ 14:00–16:30 | **Stream API + Optional** | **Stream API** — lazy evaluation, spliterator, parallel streams; **Optional** — правильное использование, антипаттерны |
 | 🌙 19:00–21:00 | **Strings + Exceptions** | **String Pool**, `String.intern()`, **StringBuilder vs StringBuffer**; **Exceptions** — checked vs unchecked, иерархия, try-with-resources, multicatch, custom exceptions, ExceptionInInitializerError |
